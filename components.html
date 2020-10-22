@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Components</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a class="logo-item" href="index.html">MYLIB</a>
+            </div>
+            <ul class="list">
+                <li class="list-item"><a href="elements.html" class="link-header">Elements</a></li>
+                <li class="list-item"><a href="components.html" class="link-header checked-color">Components</a></li>
+                <li class="list-item"><a href="layouts.html"  class="link-header">Layouts</a></li>
+                <li class="list-item"><a href="draft.html"  class="link-header">Drafts</a></li>
+                <li class="list-item"><a href="doc.html"  class="link-header">Documentation</a></li>
+            </ul>
+        </header>
+        <div class="container grow">
+            <aside class="sidebar">
+                <ul class="inner-list">
+                    <li class="inner-list-item checked"><a class="inner-link ">CHEVRON MENU</a></li>
+                    <li class="inner-list-item"><a class="inner-link">DROPDOWN MENU</a></li>
+                    <li class="inner-list-item"><a class="inner-link">MODAL BOX</a></li>
+                    <li class="inner-list-item"><a class="inner-link">ALERTS</a></li>
+                </ul>
+            </aside>
+            <main class="content">
+                <h2 class="heading-content">Chevron menu</h2>
+                    <div class="box purple box-settings">
+                        <p>Possible to use on gradient background</p>
+                        <p>Easy to use opacity for items backgrpund</p>
+                        <p>Cross-browser</p>
+                    </div>
+                    <nav class="nav gradient">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                <div class="box-wrap">
+                    <div class="box white style-text">
+                            <span class="html1">&lt;nav class="nav gradient"></span>
+                                <span class="html2">&lt;ul class="nav-list"></span>
+                                    <span class="html3">&lt;li class="nav-item"></span>
+                                        <span class="html4">&lt;a href="#">about&lt;/a></span>
+                                    <span class="html5">&lt;/li></span>
+                                    <span class="html6">&lt;li class="nav-item"></span>
+                                        <span class="html7">&lt;a href="#">careers&lt;/a></span>
+                                    <span class="html8">&lt;/li></span>
+                                    <span class="html9">&lt;li class="nav-item"></span>
+                                        <span class="html10">&lt;a href="#">faq&lt;/a></span>
+                                    <span class="html11">&lt;/li></span>
+                                    <span class="html12">&lt;li class="nav-item"></span>
+                                        <span class="html13">&lt;a href="#">contact&lt;/a></span>
+                                    <span class="html14">&lt;/li></span>
+                                <span class="html15">&lt;/ul></span>
+                            <span class="html16">&lt;/nav></span>
+                    </div>
+                </div>
+                <div class="box-wrap-css">
+                    <div class="box white style-text">
+                        <p>.nav {</p>
+                        <p>background: #000;</p>
+                        <p>padding: 2px 40px;</p>
+                        <p>margin: 48px;</p>
+                        <p>width: 1104px;</p>
+                        <p>box-sizing: border-box;</p>
+                        <p>}</p>
+                        <p>.nav-list {</p>
+                        <p>text-align: right;</p>
+                        <p>padding: 0;</p>
+                        <p>margin: 0;</p>
+                        <p>}</p>
+                        <p>.nav-item {</p>
+                        <p>display: inline-block;</p>
+                        <p>vertical-align: top;</p>
+                        <p>margin: 0 50px 0 0;</p>
+                        <p>}</p>
+                        <p>.nav-item a {</p>
+                        <p>color: #000;</p>
+                        <p>background: #fff;</p>
+                        <p>text-decoration: none;</p>
+                        <p>text-transform: uppercase;</p>
+                        <p>font-size: 32px;</p>
+                        <p>line-height: 37px;</p>
+                        <p>font-family: Helvetica, Arial, sans-serif;</p>
+                        <p>padding: 30px 25px 29px 25px;</p>
+                        <p>display: inline-block;</p>
+                        <p>position: relative;</p>
+                        <p>}</p>
+                        <p>.nav-item a:after {</p>
+                        <p>content: "";</p>
+                        <p>display: block;</p>
+                        <p>position: absolute;</p>
+                        <p>right: -25px;</p>
+                        <p>top: 0;</p>
+                        <p>width: 0;</p>
+                        <p>height: 0;</p>
+                        <p>border-style: solid;</p>
+                        <p>border-width: 48px 0 48px 25px;</p>
+                        <p>border-color: transparent transparent transparent #fff;</p>
+                        <p>}</p>
+                        <p>.nav-item a:before {</p>
+                        <p>content: "";</p>
+                        <p>display: block;</p>
+                        <p>position: absolute;</p>
+                        <p>left: -25px;</p>
+                        <p>top: 0;</p>
+                        <p>width: 0;</p>
+                        <p>height: 0;</p>
+                        <p>border-style: solid;</p>
+                        <p>border-width: 48px 0 48px 25px;</p>
+                        <p>border-color: #fff #fff #fff transparent;</p>
+                        <p>z-index: 0;</p>
+                        <p>}</p>
+                        <p>.gradient {</p>
+                        <p>background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);</p>
+                        <p>}</p>
+                        <p>.nav-item a:hover {</p>
+                        <p>background: rgba(255, 255, 255, 0.7);</p>
+                        <p>}</p>
+                        <p>.nav-item a:hover:before {</p>
+                        <p>border-color: rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7)</p>
+                        <p>rgba(255, 255, 255, 0.7) transparent;</p>
+                        <p>}</p>
+                        <p>.nav-item a:hover:after {</p>
+                        <p>border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
