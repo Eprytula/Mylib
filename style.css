@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
   background: #eff2f8;
+  min-width: 1330px;
 }
 .wrapper {
   display: flex;
@@ -45,7 +46,7 @@ li {
 .link-header {
   color: #000;
 }
-/* Introp Page */
+/* Intro Page */
 .heading {
   font-size: 54px;
   line-height: 1.17;
@@ -55,16 +56,14 @@ li {
 }
 .cards {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.card-wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
   filter: drop-shadow(0 4px 10px rgba(79, 88, 178, 0.25));
 }
 .card {
   width: 240px;
   height: 240px;
-  margin: 0 19px;
+  margin: 0 19px 48px 19px;
   clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
   line-height: 1.31;
   padding: 32px 0 0 32px;
@@ -74,8 +73,7 @@ li {
 }
 .large {
   width: 796px;
-  margin: 48px;
-  clip-path: polygon(0 0, 90% 0, 100% 30%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 94% 0, 100% 20%, 100% 100%, 0 100%);
 }
 .card-info {
   margin: 0;
@@ -135,83 +133,44 @@ li {
 /* Box */
 .box {
   position: relative;
-  width: 100%;
   min-height: 127px;
-  margin: 0;
+  margin: 48px;
   padding: 32px;
-  box-sizing: border-box;
-  clip-path: polygon(0 0, 95% 0, 100% 50px, 100% 100%, 0 100%);
 }
-.box-settings {
-  margin: 48px;
-  width: 1104px;
-  min-height: 127px;
-}
-.box-wrap {
-  width: 1104px;
-  min-height: 127px;
-  margin: 48px;
-  position: relative;
-}
-.box-wrap::before {
-  content: "HTML";
-  width: 50px;
-  height: 20px;
-  text-align: center;
-  background: #eff2f8;
-  position: absolute;
+.border-label {
+  font-family: Helvetica, Arial, sans-serif;
   color: #ffc806;
+  background: #eff2f8;
   line-height: 1.75;
   font-size: 12px;
+  position: absolute;
+  padding: 0 10px;
   top: -25px;
-  left: 10px;
-  z-index: 5;
+  left: 30px;
 }
-.box-wrap::after {
+.white.box::before {
   content: "";
   position: absolute;
-  width: 1134px;
-  min-height: 100%;
-  padding-bottom: 30px;
   display: block;
   top: -15px;
   left: -15px;
+  right: -15px;
+  bottom: -15px;
   border: 1px solid blue;
   border-radius: 5px;
   z-index: -1;
 }
-.box-wrap-css {
-  width: 1104px;
-  min-height: 127px;
-  margin: 48px;
-  position: relative;
-}
-.box-wrap-css::before {
-  content: "CSS";
-  width: 50px;
-  height: 21px;
-  text-align: center;
-  background: #eff2f8;
-  position: absolute;
-  color: #ffc806;
-  line-height: 1.75;
-  font-size: 12px;
-  top: -25px;
-  left: 10px;
-  z-index: 5;
-}
-.box-wrap-css::after {
+.box::after {
   content: "";
-  position: absolute;
-  width: 1134px;
-  min-height: 100%;
-  padding-bottom: 30px;
   display: block;
-  top: -15px;
-  left: -15px;
-  border: 1px solid blue;
-  border-radius: 5px;
-  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48px 0 0 48px;
+  border-color: #eff2f8 transparent transparent transparent;
 }
 /* Elements page */
 .headings {
@@ -222,7 +181,7 @@ li {
 .headings:before {
   content: "";
   position: absolute;
-  width: 1104px;
+  width: 800%;
   height: 1px;
   background: #131320;
   left: 0;
@@ -250,8 +209,6 @@ h6 {
   background: #000;
   padding: 2px 40px;
   margin: 48px;
-  width: 1104px;
-  box-sizing: border-box;
 }
 .nav-list {
   text-align: right;
@@ -313,9 +270,6 @@ h6 {
 .nav-item a:hover:after {
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
 }
-span {
-  display: block;
-}
 /* Layouts */
 .flex-wrapper {
   display: flex;
@@ -343,16 +297,7 @@ span {
   flex: 0 0 140px;
   background: #d5c4b2;
 }
-
-.card-text {
-  width: 138px;
-  height: 63px;
-  line-height: 1.31;
-}
 /* Text in HTML CSS */
-.elmnt-html {
-  width: 299px;
-}
 .style-text {
   font-family: Courier, "Courier New", monospace;
   line-height: 1.31;
